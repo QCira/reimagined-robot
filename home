@@ -1,0 +1,80 @@
+{% extends "cestas/header.html" %}
+
+    {% block content %}
+
+    {% load staticfiles %}
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to"0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to"1"></li>
+            <li data-target="#myCarousel" data-slide-to"2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="{% static 'nossosite/img/capa1.jpg' %}">
+                
+                <div class="carousel-caption">
+                    <h1>Produtos de preços baixos e de alta qualidade</h1>
+                </div>
+            </div><!--Fim da activacao------------->
+            <div class="item">
+                <img src="{% static 'nossosite/img/capa3.jpg' %}">
+            </div>
+            <div class="item">
+                <img src="{% static 'nossosite/img/ali.jpg' %}">
+            </div>
+        </div>
+        <!---Inicio dos controles do SLIDER------>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        
+        </a>
+    </div><!---FIM DO SLIDER------>
+    
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{% static 'nossosite/img/circu.jpg' %}" id="icon">
+                
+            </div>
+            <div class="col-sm-4">
+                <img src="{% static 'nossosite/img/maca2.png' %}" id="icon">
+                
+            </div>
+            <div class="col-sm-4">
+                <img src="{% static 'nossosite/img/tri.jpg' %}" id="icon">
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Procurando produtos de preços baixos e de alta  qualidade</h3>
+                <br>
+                <p>Foi pensando em si e na expectativa de facilitar-lhe o  
+                   processo nesta procura de preços baixos de qualidade
+                   que o nosso projecto cestas alimentícias  criamos 
+                   contacto com vários fornecedores de alimentos
+                   de modo a encontrares os melhores alimentos a baixo preço</p>
+                
+                <p>Achar bons alimentos com qualidade e baixo preço
+                    nunca foi tão fácil, então do que está a espera</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'nossosite/img/capa2.jpg' %}" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    
+     {% endblock %}
+    
+  
